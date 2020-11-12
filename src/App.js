@@ -22,16 +22,12 @@ function App() {
     setExpression("");
   };
   const delete1 = function () {
-    const newExpression = expression.value;
-    newExpression = newExpression.substring(0, newExpression.length - 1);
-    setExpression(newExpression);
-
-    const copy = newExpression.filter((el) => newExpression[el !== length]);
-    setExpression(copy);
+    setExpression(expression.slice(0, -1));
   };
 
   return (
     <div className="App">
+      <h1> Simple Calculator</h1>
       <div id="result" className="screen">
         {expression}
       </div>
