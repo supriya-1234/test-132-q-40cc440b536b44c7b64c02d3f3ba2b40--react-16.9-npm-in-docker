@@ -3,7 +3,7 @@ import { evaluate } from "mathjs";
 import "./App.css";
 
 function App() {
-  const [expression, setExpression] = useState("");
+  const [expression, setExpression] = useState(0);
   const calculate = function () {
     let result;
     try {
@@ -19,7 +19,7 @@ function App() {
   };
 
   const clear = function () {
-    setExpression("");
+    setExpression();
   };
   const delete1 = function () {
     setExpression(expression.slice(0, -1));
