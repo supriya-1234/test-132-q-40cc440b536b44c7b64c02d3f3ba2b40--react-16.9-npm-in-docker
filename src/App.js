@@ -56,6 +56,9 @@ function App() {
       <button id="percentile" key={"%"} onClick={() => handleClick("%")}>
         %
       </button>
+      <button id="dot" key={"."} onClick={() => handleClick(".")}>
+        .
+      </button>
       <button id="equal" onClick={calculate}>
         =
       </button>
